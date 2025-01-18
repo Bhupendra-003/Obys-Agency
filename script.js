@@ -18,7 +18,7 @@ tl.from('#line1-part1, .line h2',{
                     h5timer.innerHTML = grow;
                 }
                 grow++;
-            }, 30)
+            }, 25)
         }
     }
 })
@@ -29,4 +29,9 @@ tl.to('#loader', {
     opacity: 0,
     duration: 0.4,
     delay: 3,
+})
+tl.from('#page1', {
+    y: 1200,
+    delay: 0.2,
+    opacity: 0,
 })

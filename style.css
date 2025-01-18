@@ -12,7 +12,7 @@ html, body{
 }
 #main{
     position: relative;
-    background-color: #151515;
+    background-color: #0a0a0a;
 }
 #page1{
     height: 100vh;
@@ -60,6 +60,36 @@ html, body{
     font-size: 6.7vw;
     text-transform: uppercase;
     font-weight: 900;
+    animation: anime 1.5s infinite;
+}
+@keyframes anime {
+    0%{
+        font-family: 'Plain Light';
+        -webkit-text-stroke: 1px white;
+        font-weight: 500;
+        opacity: 1;
+    }
+    47%{
+        font-family: 'Plain Light';
+        -webkit-text-stroke: 1px white;
+        font-weight: 500;
+        opacity: 0;
+    }
+
+    50%{
+        font-family: 'silk serif';
+        -webkit-text-stroke: 1px white;
+        font-weight: 500;
+        color: transparent;
+        opacity: 1;
+    }
+    100%{
+        font-family: 'silk serif';
+        -webkit-text-stroke: 1px white;
+        font-weight: 500;
+        color: transparent;
+        opacity: 0;
+    }
 }
 #loader-msg{
     font: 'Plain Light';
