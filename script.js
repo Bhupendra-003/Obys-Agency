@@ -1,4 +1,5 @@
-var h5timer = document.querySelector('#prog1');
+function loadingAnimation(){
+    var h5timer = document.querySelector('#prog1');
 var grow = 0;
 gsap.from('#line1-part1',{
     delay: 1,
@@ -10,6 +11,7 @@ gsap.from('#line1-part1',{
                     h5timer.innerHTML = grow;
                 }
                 grow++;
+                console.log(grow)
             }, 25)
         }
     }
@@ -25,23 +27,25 @@ tl.from('.line h1', {
 tl.to('.line h2', {
     animationName: 'anime',
     opacity: 1,
-    duration: 5, // Max duration
-    onUpdate: () => {
-        if (grow >= 100) {
-            gsap.set('.line h2', { animationName: '' }); // Reset animationName
-        }
-    }
-});
-tl.from('#loader-msg', {
-    opacity: 0,
 })
-tl.to('#loader', {
+.from('#loader-msg', {
     opacity: 0,
-    duration: 0.4,
+}, "<")
+tl.to('.line', {
+    opacity: 0,
+    stagger: 0.2,  // Controls delay between each line
+    duration: 0.6,
     delay: 2,
+    onComplete: function() {
+        document.querySelector('#loader').style.opacity = 0;
+        document.querySelector('#loader').style.display = none;
+    }
 })
 tl.from('#page1', {
     y: 1200,
     delay: 0.2,
     opacity: 0,
 })
+}
+
+loadingAnimation()
