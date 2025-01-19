@@ -146,10 +146,18 @@ html, body{
 .hero:nth-child(2){
     margin-top: 13.8vh;
 }
-.hero h1{
+.hero h1, .hero h2{
     height: fit-content;
     font-size: 7.2vw;
     font-weight: 900;
     line-height: 7.4vw;
     text-transform: uppercase;
+    
+}
+#hero3 h2{
+    -webkit-text-stroke: 1px white;
+}
+.hero h2:hover{
+    -webkit-text-stroke: 1px white;
+    color: transparent;
 }

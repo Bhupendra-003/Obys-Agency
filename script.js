@@ -16,36 +16,39 @@ function loadingAnimation() {
         }
     })
 
+    //Debug
+    document.querySelector('#loader').style.display = 'none'
+
     var tl = gsap.timeline();
-    tl.from('.line h1', {
-        y: 130,
-        stagger: 0.3,
-        duration: 0.6,
-        delay: 0.5,
-    })
-    tl.to('.line h2', {
-        animationName: 'anime',
-        opacity: 1,
-    })
-        .from('#loader-msg', {
-            opacity: 0,
-        }, "<")
-    tl.to('.line', {
-        opacity: 0,
-        stagger: 0.2,  // Controls delay between each line
-        duration: 0.6,
-        delay: 2,
-        onComplete: function () {
-            document.querySelector('#loader').style.opacity = 0;
-            document.querySelector('#loader').style.display = 'none';
-        }
-    })
+    // tl.from('.line h1', {
+    //     y: 130,
+    //     stagger: 0.3,
+    //     duration: 0.6,
+    //     delay: 0.5,
+    // })
+    // tl.to('.line h2', {
+    //     animationName: 'anime',
+    //     opacity: 1,
+    // })
+    //     .from('#loader-msg', {
+    //         opacity: 0,
+    //     }, "<")
+    // tl.to('.line', {
+    //     opacity: 0,
+    //     stagger: 0.2,  // Controls delay between each line
+    //     duration: 0.6,
+    //     delay: 2,
+    //     onComplete: function () {
+    //         document.querySelector('#loader').style.opacity = 0;
+    //         document.querySelector('#loader').style.display = 'none';
+    //     }
+    // })
     tl.from('#page1', {
         y: 1200,
         delay: 0.2,
         opacity: 0,
     })
-    .from('.hero h1', {
+    .from('.hero h1, .hero3-cont', {
         y: 130,
         delay: 0.5,
         stagger: 0.2,
