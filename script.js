@@ -54,14 +54,17 @@ function loadingAnimation() {
         stagger: 0.2,
     }, '<')
 }
+document.querySelector('#crsr').style.display = 'none';
 function cursor(){
     document.addEventListener('mousemove', (dets) => {
+        document.querySelector('#crsr').style.display = 'block';
         gsap.to('#crsr', {
             left: dets.x,
             top: dets.y,
         })
     })
 }
+
 loadingAnimation();
 cursor()
 Shery.makeMagnet("#nav-part2 h4, .menu-opener__square", {
