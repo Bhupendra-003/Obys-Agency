@@ -215,4 +215,78 @@ html, body{
     position: relative;
     width: 100vw;
     background-color: #151515;
+    padding: 8vw 4vw;
+}
+.page4-cont{
+    position: relative;
+    width: fit-content;
+    left: 25.5%;
+    width: 74.5%;
+}
+.page4-cont h1{
+    font-size: 7.2vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 7.4vw;
+    margin-bottom: 2.4vw;
+}
+.page4-cont .underline{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+.page4-cont h2{
+    padding-top: 4vw;
+    font-size: 2.5vw;
+    font-weight: 500;
+    width: 45.5vw;
+    line-height: 2.7vw;
+}
+.page4-flex{
+    margin-top: 10vh;
+    display: flex;
+    gap: 1.7vw;
+}
+.page4-flex img{
+    width: 33vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page4-flex-cont p{
+    font-size: 1.1vw;
+    width: 20vw;
+    line-height: 1.8vw;
+    margin-bottom: 1.5vw;
+}
+.page4-flex-cont p:nth-child(2){
+    width: 21vw;
+}
+.page4-blue-div{
+    position: relative;
+    top: -17vh;
+    left: 34%;
+    width: 45vw;
+    height: 41vw;
+    background-color: #3f7df4;
+    padding: 2.5vw 4vw;
+}
+.page4-blue-div .ele{
+    display: flex;
+    height: 6.8vw;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+.page4-blue-div .ele .ele1{
+    font-size: 1.7vw;
+    width: 12vw;
+}
+.page4-blue-div .ele .ele2{
+    margin-left: 3vw;
+    font-size: 1.1vw;
+    font-weight: 500;
+}
+#we-work-with{
+    margin-top: 4vh;
 }
