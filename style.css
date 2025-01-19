@@ -14,12 +14,7 @@ html, body{
     position: relative;
     background-color: #0a0a0a;
 }
-#page1{
-    height: 95vh;
-    width: 100vw;
-    background-color: #151515;
 
-}
 #crsr{
     position: fixed;
     width: 2.4vw;
@@ -113,7 +108,12 @@ html, body{
     margin-top: 10vh;
     margin-left: 21vw;
 }
-
+#page1{
+    height: 95vh;
+    width: 100vw;
+    background-color: #151515;
+    position: relative;
+}
 #nav{
     padding: 2.8vw 4.6vw;
     display: flex;
@@ -135,6 +135,11 @@ html, body{
     position: relative;
     cursor: pointer;
 } 
+#page1-caption{
+    position: absolute;
+    top: 6%;
+    left: 28%;
+}
 .hero{
     display: flex;
     align-items: center;
@@ -143,8 +148,17 @@ html, body{
     margin-left: 27.5%;
     overflow: hidden;
 }
-.hero:nth-child(2){
+.hero:nth-child(1){
     margin-top: 13.8vh;
+}
+.hero-cont::before{
+    content: '01';
+    position: absolute;
+    font-size: 3.2vw;
+    font-family: 'silk serif';
+    left: 18%;
+    font-weight: 500;
+    top: 30%;
 }
 .hero h1, .hero h2{
     height: fit-content;
@@ -222,6 +236,15 @@ html, body{
     width: fit-content;
     left: 25.5%;
     width: 74.5%;
+}
+.page4-cont h1::before{
+    content: '03';
+    position: absolute;
+    font-size: 3vw;
+    font-family: 'silk serif';
+    left: -13%;
+    font-weight: 500;
+    top: -1%;
 }
 .page4-cont h1{
     font-size: 7.2vw;
