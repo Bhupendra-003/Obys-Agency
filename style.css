@@ -20,6 +20,16 @@ html, body{
     background-color: #151515;
 
 }
+#crsr{
+    position: fixed;
+    width: 2.4vw;
+    height: 2.4vw;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.546);
+    z-index: 99999;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+}
 #loader{
     height: 100%;
     width: 100%;
@@ -121,18 +131,23 @@ html, body{
     display: flex;
     gap: 2.2vw;
 } 
+#nav-part2 h4{
+    position: relative;
+    cursor: pointer;
+} 
 .hero{
-    background-color: red;
     display: flex;
     align-items: center;
     text-align: left;
-    width: 55%;
+    width: 65%;
     margin-left: 27.5%;
+    overflow: hidden;
 }
 .hero:nth-child(2){
     margin-top: 13.8vh;
 }
 .hero h1{
+    height: fit-content;
     font-size: 7.2vw;
     font-weight: 900;
     line-height: 7.4vw;
